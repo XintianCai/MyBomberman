@@ -29,6 +29,4 @@ Issues That Need Resolving：
 
   The program sometimes is unable to restart the game automatically.
   
-  If you want to play again, just click it manually.
-  
-  At the beginning of the game, if the role is too closed to monsters, you may not have time to escape.
+  If you want to play again, just run it manually.
