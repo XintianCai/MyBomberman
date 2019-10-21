@@ -37,7 +37,7 @@ public class StartGame extends Thread {
 	boolean gameResult;
 	
 	public void run(){
-		
+		System.out.println("Initializing the game...");
 		//Set frame
 		frame.addWindowListener(new WindowAdapter() {
 		    public void windowClosing(WindowEvent e){
@@ -83,6 +83,7 @@ public class StartGame extends Thread {
 		startPlay();
 	}
 	public void startPlay(){
+		System.out.println("Game Start");
 		//get current time
 		startTime =  System.currentTimeMillis();
 		changeActionTime=  System.currentTimeMillis();
@@ -223,16 +224,10 @@ public class StartGame extends Thread {
 	}
     private void randomPlayer(){
     	int x,y;
-    	boolean isTooClosed=false;
     	while(true){
     		x=(int)(Math.random()*10);
         	y=(int)(Math.random()*10);
     		if(entityPanel[x][y].getGridType()!=2||entityPanel[x][y].getGridType()!=3){
-        		for(Monster monster:monsterList){
-        			if(Math.abs(x-monster.getX())<2&&Math.abs(y-monster.getY())<2)
-        				isTooClosed=true;
-        		}
-        		if(!isTooClosed)
     			break;
         	}
     	}
@@ -643,7 +638,6 @@ public class StartGame extends Thread {
 		}
 		if(entityPanel[bomberman.getX()][bomberman.getY()].getGridType()==1){
 			iskilled=true;
-			System.out.println("iskilled");
 		}
 		return iskilled;
 	}
