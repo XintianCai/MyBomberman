@@ -670,14 +670,6 @@ public class StartGame extends Thread {
 		
 		EndGame endgame=new EndGame();
 		endgame.run(gameResult);
-		
-		while(true){
-			if(endgame.restart){
-				StartGame startGame=new StartGame();
-				startGame.start();
-				break;
-			}
-		}
 	}
 }
 
