@@ -12,6 +12,8 @@ Run The Game:
   
 
 Issues That Need Resolving：
-The program sometimes is unable to restart the game automatically.
-If you want to play again, just click it manually.
-At the beginning of the game, if the role is too closed to monsters, you may not have time to escape.
+  The program sometimes is unable to restart the game automatically.
+  
+  If you want to play again, just click it manually.
+  
+  At the beginning of the game, if the role is too closed to monsters, you may not have time to escape.
