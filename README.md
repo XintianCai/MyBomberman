@@ -6,6 +6,12 @@ Game Commands:
 Game Over:
   Kill all the monsters by putting bombs, or be killed by monsters, bombs or fire
 
-Run the Game:
+Run The Game:
   Import the project into Eclipse.
   Run the "Main" file in "main" package
+  
+
+Issues That Need Resolving：
+The program sometimes is unable to restart the game automatically.
+If you want to play again, just click it manually.
+At the beginning of the game, if the role is too closed to monsters, you may not have time to escape.
