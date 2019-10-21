@@ -61,6 +61,9 @@ public class EndGame implements ActionListener{
 			panel1.removeAll();
 			panel2.removeAll();
 			restart=true;
+			
+			StartGame startGame=new StartGame();
+			startGame.start();
 		}
 		else if(eventSource.equals(button2)){
 			System.exit(0);
