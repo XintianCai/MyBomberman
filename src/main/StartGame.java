@@ -223,11 +223,17 @@ public class StartGame extends Thread {
 	}
     private void randomPlayer(){
     	int x,y;
+    	boolean isTooClosed=false;
     	while(true){
     		x=(int)(Math.random()*10);
         	y=(int)(Math.random()*10);
     		if(entityPanel[x][y].getGridType()!=2||entityPanel[x][y].getGridType()!=3){
-        		break;
+        		for(Monster monster:monsterList){
+        			if(Math.abs(x-monster.getX())<2&&Math.abs(y-monster.getY())<2)
+        				isTooClosed=true;
+        		}
+        		if(!isTooClosed)
+    			break;
         	}
     	}
     	entityPanel[x][y].setGridType(4);
