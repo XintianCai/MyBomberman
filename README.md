@@ -11,16 +11,19 @@ Game Commands:
   Find the game helper	- Shift key; 
   
   Quit the game	- ESC key
+  
 
 Game Over:
 
   Kill all the monsters by putting bombs, or be killed by monsters, bombs or fire
+  
 
 Run The Game:
 
   Import the project into Eclipse
   
   Run the "Main" file in "main" package
+  
   
 Issues That Need Resolving：
 
